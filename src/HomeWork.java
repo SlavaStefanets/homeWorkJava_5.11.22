@@ -1,17 +1,18 @@
+import java.util.Scanner;
+
 public class HomeWork {
     public static void main(String[] args) {
-        long chinesePeople = 1_411_778_7241l;
-        int worldsContrys = 197;
-        long all = chinesePeople + worldsContrys;
-        System.out.println(all);
+        Scanner scanner = new Scanner(System.in);
+        int number = scanner.nextInt();
 
-    long felixLived = 3_011_456_567l; //second
-        felixLived /= 60;
-        felixLived /= 60;
-        felixLived /= 24;
-        felixLived /= 365;
-        System.out.println(felixLived);
-
-        System.out.println(3_011_456_567l / 60 /60 / 24 / 365);
+        if (number <= 9){
+            System.out.println("OneNumber");
+        }
+        if (number >= 10 && number <= 99){
+            System.out.println("TwoNumbers");
+        }
+        if (number >= 100 && number <= 999){
+            System.out.println("ThreeNumbers");}
+        }
     }
-}
+
